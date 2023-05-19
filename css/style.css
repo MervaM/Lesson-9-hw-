@@ -1,0 +1,133 @@
+@import url(./normalize.css);
+@import url(./vars.css);
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100hv;
+    color: var(--main-color-text);
+    font-size: var(--main-font-size);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* main */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+    /* text-align: center; */
+}
+
+.form {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 50px;
+    background-image: url(../assets/background.jpg);
+}
+
+.form input,
+.form textarea,
+.form select {
+    width: 60%;
+    font-size: 16px;
+    color: #3d3d3d;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.form select:focus-visible,
+.form input:focus-visible,
+.form textarea:focus-visible{
+    outline: none;
+    box-shadow: inset 0 0 4px 1px #777772;;
+}
+
+.form input[type='radio'] {
+    text-align: center;
+}
+
+.personal-info>div>label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* gender  */
+
+.gender {
+    text-align: center;
+    display: inline-flex;
+
+}
+
+h3 {
+    font-weight: 400;
+    font-size: var(--main-font-size);
+    display: inline-block;
+    margin-right: 140px;
+}
+
+h2  {
+    text-align: none;
+}
+
+/* age */
+
+.age > input {
+    width: 80px;
+    margin: 0 0 20px 115px;
+}
+
+/* course */
+
+.course>label>select {
+    width: 60%;
+    text-align: center;
+    margin: 0 0 20px 98px;
+}
+/* address */
+
+.address {
+    margin-bottom: 20px;
+}
+
+.address>label>textarea {
+    width: 60%;
+    height: 100px;
+    margin-left: 7px;
+}
+
+/* checkbox */
+.consent {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.consent>label {
+    display: inline-flex;
+}
+/* buttons */
+.buttons {
+    text-align: center;
+}
+
+.clean-form,
+.register {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: #2e2e2e;
+    background-color: transparent;
+}
+
+.clean-form:hover,
+.register:hover {
+    border-radius: 5px;
+    /* border-color: #d0d0d0; */
+    background-color: #fff;
+    box-shadow: 0 0 6px 1px #8b8062;
+
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <form action="#" method="post" class="form">
+                <div class="personal-info">
+                    <div>
+                        <label for="name">Повне Ім'я</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" required id="email">
+                    </div>
+                    <div>
+                        <label for="password">Пароль</label>
+                        <input type="text" id="password">
+                    </div>
+                    <div>
+                        <label for="password">Пароль ще раз</label>
+                        <input type="password" id="unique">
+                    </div>
+                </div>
+                <div class="gender">
+                    <h3>Стать</h3>
+                    <div class="gender">
+                        <label><input type="radio" value="man" name="gender">чоловіча</label>
+                        <label><input type="radio" value="woman" name="gender">жіноча</label>
+                    </div>
+                </div>
+                <div class="age">
+                    <label for="age">Вік</label>
+                    <input type="text" id="age">
+                </div>
+                <div class="course">
+                    <label for="course">Курс
+                        <select name="course" id="course">
+                            <option selected="">Виберіть курс</option>
+                            <option value="UI/UX">UI/UX дизайн</option>
+                            <option value="QA">QA Manual</option>
+                            <option value="Front-End">Front-End Розробка</option>
+                            <option value="Python">Python Розробка</option>
+                            <option value="C#">C# Розробка</option>
+                            <option value="Marketing">Digital Marketing</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="address">
+                    <label for="adress">Повна адреса
+                        <textarea name="text" id="adress" cols="30" rows="3" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+                    </label>
+                </div>
+                <div class="consent">
+                    <label for="check">
+                        <input type="checkbox" id="check">Я погоджуюсь з обробкою персональних даних
+                    </label>
+                </div>
+                <div class="buttons">
+                    <button type="clean" class="clean-form">Очистити форму</button>
+                    <button type="submit" class="register">Зареєструватись</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
